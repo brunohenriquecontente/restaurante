@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans&display=swap');
 * {
     padding: 0;
     margin: 0;
 }
 
+.container {
+    background-color: #d9d9d9;
+}
+
 header {
     display: flex;
+    font-family: 'Itim', cursive, sans-serif;
 }
+
 /* 
 body {
     display: flex;
@@ -17,7 +24,7 @@ img#logo {
     width: 200px;
 }
 
-section.menu  {
+section.menu {
     flex-grow: 1;
     flex-basis: auto;
     padding: 3% 0px 0px 4%;
@@ -25,19 +32,40 @@ section.menu  {
 
 .menu a {
     background-color: rgb(212, 201, 137);
-    color: rgb(18, 43, 75, 255);
+    color: rgb(18, 43, 75);
     text-decoration: none;
     line-height: 50px;
     padding: 10px;
     margin: 2px;
     border-radius: 3px;
-    box-shadow: 2px 2px 3px rgb(18, 43, 75, 255);
+    box-shadow: 2px 2px 3px rgb(18, 43, 75);
 }
 
 .menu a:hover {
-    background-color: rgb(18, 43, 75, 255);
+    background-color: rgb(18, 43, 75);
     color: rgb(212, 201, 137);
     box-shadow: 1px 1px 1px rgb(212, 201, 137);
+}
+
+.conteudo {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(18, 43, 75);
+    background-color: rgb(212, 201, 137);
+    min-height: 138px;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgb(18, 43, 75);
+    border-style: solid;
+}
+
+.conteudo h2 {
+    font: 15px;
+    margin: 5px;
+}
+
+.conteudo p {
+    width: 75%;
+    text-indent: 20px;
+    margin: 5px;
 }
 
 footer.rodape {
@@ -45,7 +73,12 @@ footer.rodape {
     /* ATENÇÃO MUDAR PARA RELATIVE QUANDO O BODY ESTIVER CHEIO*/
     bottom: 0;
     width: 100%;
-    background-color: rgb(18, 43, 75, 255);
+    background-color: rgb(18, 43, 75);
+    border-top: black 2px solid;
+}
+
+.rodape legend {
+    font-family: 'Itim', cursive, sans-serif;
 }
 
 div.div-rodape {
@@ -67,6 +100,7 @@ div.div-rodape {
 .div-rodape fieldset a, .div-rodape fieldset {
     text-decoration: none;
     color: rgb(212, 201, 137);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .social-media li {
