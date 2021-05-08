@@ -35,7 +35,7 @@ section {
 }
 
 footer {
-    position: absolute;
+    position: absolute; /* ATENÇÃO MUDAR PARA RELATIVE QUANDO O BODY ESTIVER CHEIO*/
     bottom: 0;
     width: 100%;
     background-color: rgb(18, 43, 75, 255);
