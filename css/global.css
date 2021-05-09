@@ -69,7 +69,7 @@ section.menu {
 }
 
 footer.rodape {
-    position: absolute;
+    position: relative;
     /* ATENÇÃO MUDAR PARA RELATIVE QUANDO O BODY ESTIVER CHEIO*/
     bottom: 0;
     width: 100%;
