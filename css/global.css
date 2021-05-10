@@ -45,8 +45,13 @@ img#logo {
 }
 
 footer.rodape {
+<<<<<<< HEAD
     position: relative;
     /* ATENÇÃO MUDAR PARA RELATIVE QUANDO O BODY ESTIVER CHEIO*/    
+=======
+    position: absolute;
+    /* ATENÇÃO MUDAR PARA RELATIVE QUANDO O BODY ESTIVER CHEIO*/
+>>>>>>> parent of 134492b (update style)
     bottom: 0;
     width: 100%;
     background-color: rgb(18, 43, 75);
