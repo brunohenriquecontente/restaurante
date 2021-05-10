@@ -7,24 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESTAURANTE DONA BENTA</title>
     <link rel="stylesheet" href="css/global.css" type="text/css">
+    <link rel="stylesheet" href="css/sidnav.css" type="text/css">
+    <link rel="stylesheet" href="css/breadcrumb.css" type="text/css">
     <script src="https://kit.fontawesome.com/a1ad9646bb.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.5.1.min.js"></script>
     <script src="js/slide.js"></script>
 </head>
 
 <body>
+    <nav class="sidbar">
+        <div><a href="index.html"><img id="logo" src="img/logo-fundo-transparente.png" alt=""></a></div>
+        <ul>
+            <li><a href="">Início</a></li>
+            <li><a href="#">Cardápio</a></li>
+            <li><a href="#">Cadastro</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre nós</a></li>
+        </ul>
+    </nav>
     <div class="container">
-        <header>
-            <a href="index.html"><img id="logo" src="img/logo-fundo-transparente.png" alt=""></a>
-            <section class="menu">
-                <a href="">INÍCIO</a>
-                <a href="">CARDÁPIO</a>
-                <a href="">CADASTRO</a>
-                <a href="">LOGIN</a>
-                <a href="">PROMOÇÕES</a>
-                <a href="">CONTATO</a>
-                <a href="">SOBRE NÓS</a>
-            </section>
-        </header>
+        <ul class="breadcrumb">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Cardápio</a></li>
+            <li><a href="#">Cadastro</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre nós</a></li>
+        </ul>
         <div class="slider">
             <div class="slides">
                 <input type="radio" name="radio-btn" id="radio1">
@@ -60,9 +72,7 @@
             </div>
         </div>
 
-
-
-        <div class="conteudo">
+        <!-- <div class="conteudo">
             <h2>RESTAURANTE DONA BENTA</h2>
 
             <p>
@@ -73,7 +83,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloribus dolorum deserunt delectus
                 inventore quod, beata.
             </p>
-        </div>
+        </div> -->
         <footer class="rodape">
             <div class="div-rodape">
                 <fieldset>
@@ -128,6 +138,12 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        $('nav ul li').click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
 </body>
 
 </html>
